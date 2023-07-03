@@ -44,14 +44,14 @@
 
                 lower_layer {
 // ------------------------------------------------------------------------------------
-// | ESC             |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      HOME   |
-// | WIN(SHFT(LEFT)) |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |       ~     |
-// | CAPS            |     |  {  |  [  |  (  |     |   |     |  )  |  ]  |  }  |     |     ALT     |
-//                                    |     |     | RET | CLMK | QWERTY |
+// | ESC  |  !              |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      HOME   |
+// |      |  1              |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |       ~     |
+// | CAPS | WIN(SHFT(LEFT)) |  {  |  [  |  (  |     |   |     |  )  |  ]  |  }  |     |     ALT     |
+//                                     |     |     | RET | CLMK | QWERTY |
                         bindings = <
-   &kp ESC          &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp HOME
-   &kp LG(LS(LEFT)) &kp N1    &kp N2      &kp N3   &kp N4   &kp N5         &kp N6    &kp N7   &kp N8    &kp N9    &kp N0    &kp TILDE
-   &kp CLCK         &trans    &kp LBRC    &kp LBKT &kp LPAR &trans         &trans    &kp RPAR &kp RBKT  &kp RBRC  &trans    &kp RALT
+   &kp ESC   &kp EXCL         &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp HOME
+   &trans    &kp N1           &kp N2      &kp N3   &kp N4   &kp N5         &kp N6    &kp N7   &kp N8    &kp N9    &kp N0    &kp TILDE
+   &kp CLCK  &kp LG(LS(LEFT)) &kp LBRC    &kp LBKT &kp LPAR &trans         &trans    &kp RPAR &kp RBKT  &kp RBRC  &trans    &kp RALT
                                          &trans      &trans       &kp RET        &to 0       &to 1
                         >;
                 };
